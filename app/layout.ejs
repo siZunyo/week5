@@ -7,20 +7,44 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
   <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 
 <body>
-  <header class="header">
-    這是 header
-  </header>
+  <div class="container d-flex">
+    <div class="menu bg-light d-flex flex-column justify-content-between">
+      <div class="menu-1">
+        <h1>ANSWER</h1>
+        <ul class="list-unstyled">
+          <li><a href="#"><img src="./assets/images/dashboard_black_24dp.svg" alt="Dashboard">Dashboard</a></li>
+          <li><a href="#"><img src="./assets/images/question_answer_black_24dp.svg" alt="Question">Question</a></li>
+          <li><a href="#"><img src="./assets/images/assignment_black_24dp.svg" alt="Assignment">Assignment</a></li>
+          <li><a href="#"><img src="./assets/images/label_black_24dp.svg" alt="Course">Course</a></li>
+          <li><a href="#"><img src="./assets/images/account_circle_black_24dp.svg" alt="Admin">Admin</a></li>
+          <li><a href="#"><img src="./assets/images/settings_black_24dp.svg" alt="Settings">Settings</a></li>
+        </ul>
+      </div>
+      <div class="menu-2 d-flex">
+        <img src="./assets/images/andychen.jpeg" alt="pic">
+        <ul class="list-unstyled">
+          <li class="name">Andy Chen</li>
+          <li class="email">andy0401@mail.com</li>
+        </ul>
+      </div>
+      
+    </div>
+    <div class="content p-32 d-flex flex-column justify-content-between">
+        <%- contents %>
+    </div>
+  </div>
+  
 
-  <%- contents %>
-
-  <footer class="footer">
-    footer
-  </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 
 </html>

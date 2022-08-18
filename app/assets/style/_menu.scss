@@ -1,0 +1,47 @@
+.menu{
+    width: 296px;
+    height: 800px;
+    padding: 32px;
+}
+.menu-1{
+    a{
+        display: block;
+        text-decoration:none;
+        color:#212529;
+        font-weight: bold;
+        padding-left: 33px;
+    }
+    a:hover{
+        color:#198754;
+        border-left: 4px solid #198754;
+    }
+    a:focus{
+        color:#198754;
+        border-left: 4px solid #198754;
+    }
+    h1{
+        margin-bottom: 42px;
+    }
+    img{
+        margin-right: 16px;
+    }
+    li{
+        margin-bottom: 26px;
+    }
+}
+.menu-2{
+    img{
+        width: 40px;
+        height: 40px;
+        margin-right: 16px;
+        border-radius: 100%;
+    }
+    .name{
+        font-weight: bold;
+    }
+    .email{
+        color: #6C757D;
+        font-size: 14px;
+    }
+    
+}

@@ -1,12 +1,149 @@
 ---
-title: 首頁
+title: ANSWER
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
-<h1>
-  這是一段話
-</h1>
+<div class="warp">
+    <div class="header d-flex align-items-center justify-content-between">
+        <div class="header-1 d-flex align-items-center">
+            <h2 class="mr-48 fwb">Admin</h2>
+            <a class="add"><img class="mr-8" src="./assets/images/add_FILL0_wght400_GRAD0_opsz24.svg" alt="add">Add New Admin</a>
+        </div>
+        <div class="header-2">
+            <a href=""><img class="mr-26" src="./assets/images/search_FILL0_wght400_GRAD0_opsz24.svg" alt="search"></a>
+            <a href=""><img src="./assets/images/notification_important_FILL0_wght400_GRAD0_opsz24.svg" alt="notification"></a>
+        </div>
+    </div>
 
-<div class="box"></div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Email</th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">#1</th>
+            <td>Emir Wicks</td>
+            <td>emir.wicks@mail.com</td>
+            <td>Yes</td>
+            <td>
+                <a href="#" class="mr-26" data-bs-toggle="modal" data-bs-target="#modalTest"><img src="./assets/images/savings_FILL0_wght400_GRAD0_opsz24.svg" alt="savings"></a>
+                <a href="#"><img src="./assets/images/edit_FILL0_wght400_GRAD0_opsz24.svg" alt="edit"></a>    
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">#2</th>
+            <td>Zaina Goldsmith</td>
+            <td>zaina.goldsmith@mail.com</td>
+            <td>Yes</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">#3</th>
+            <td>Mahima Lopez</td>
+            <td>mahima.lopez@mail.com</td>
+            <td>Yes</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">#4</th>
+            <td>mahima.lopez@mail.com</td>
+            <td>pharrell.murray@mail.com</td>
+            <td>Yes</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">#5</th>
+            <td>Annika Mcbride</td>
+            <td>annika.mcbride@mail.com</td>
+            <td>Yes</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">#6</th>
+            <td>Fatimah Clark</td>
+            <td>fatimah.clark@mail.com</td>
+            <td>Yes</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">#7</th>
+            <td>Klaudia Rhodes</td>
+            <td>klaudia.rhodes@mail.com</td>
+            <td>Yes</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">#8</th>
+            <td>Tillie Lucero</td>
+            <td>tillie.lucero@mail.com</td>
+            <td>Yes</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">#9</th>
+            <td>Sabrina Stephenson</td>
+            <td>sabrina.stephenson@mail.com</td>
+            <td>Yes</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th scope="row">#10</th>
+            <td>Annie Smith</td>
+            <td>annie.smith@mail.com</td>
+            <td>Yes</td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="footer d-flex flex-row-reverse">
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+        </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+        </a>
+        </li>
+    </ul>
+    </nav>
+</div>
+  
+<!-- Modal -->
+<div class="modal fade" id="modalTest" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-32 d-flex flex-row align-items-center position-relative">
+            <button type="button" class="btn-close position-absolute top-0 end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+            <img class="pic mr-24" src="./assets/images/emir.jpeg" alt="emp">
+            <div class="emp">
+                <ul class="list-unstyled">
+                    <li class="mb-8">#1</li>
+                    <li>Admin</li>
+                    <li class="fwb fsz-24 lh36 mb-8">Emir Wicks</li>
+                    <li class="fsz-14 lh24 gary mb-20">emir.wicks@mail.com</li>
+                    <li>
+                        <select name="select_a">
+                            <option value="Verified">Verified</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
